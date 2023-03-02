@@ -1,0 +1,923 @@
+/*.....google-fonts...*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+/*.......google fonts......
+font-family: 'Roboto Condensed', sans-serif;
+*/
+/*==========================
+GLOBAL CSS
+============================*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', Helvathika, Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed', Helvathika, Arial, sans-serif;
+}
+img{
+	width: 100%;
+}
+input{
+	box-sizing: border-box;
+}
+/*==========================
+		NAV SECTION start
+============================*/
+nav{
+	background: #000;
+	height: 60px;
+	/* position: -webkit-sticky; */
+	position:sticky;
+	top:0;
+	z-index:999;
+
+}
+
+ .checkbtn{
+ 	float: left;
+ 	font-size: 30px;
+ 	color: white;
+ 	cursor: pointer;
+ 	line-height: 53px;
+ 	display: none;
+ 	margin-left: 200px;
+ }
+
+.logo{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	padding-left: 30px;
+	line-height: 50px;
+	float: left;
+}
+ nav ul{
+ 	float: right;
+ 	padding-right: 73px;
+ }
+ nav ul li{
+ 	display: inline;
+ 	line-height: 49px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+
+ }
+ nav .link a{
+ 	font-size: 18px;
+ 	color: white;
+ 	letter-spacing: 1px;
+ 	padding: 2px 1px;
+
+
+
+ }
+.active a {
+	color: #dea501;	
+}
+
+
+ #check{
+ 	display: none;
+
+ }
+ li.link a::before{
+ 	content: ' ';
+ 	width: 0%;
+ 	height: 3px;
+ 	background: rgba(255, 139, 56, 0);
+ 	position: absolute;
+ 	bottom:-2px;
+ 	left:2px; 
+ 	transition: 0.3s ease-in-out;
+ 	
+	
+ }
+
+li.link a:hover::before{
+	background: rgba(255, 139, 56, 1);
+	width: 90%;
+
+	
+}
+li.link a:hover{
+	color: #dea501;
+}
+
+
+/*==========================
+		NAV SECTION END
+============================*/
+
+/*==========================
+		HERO SECTION
+============================*/
+.hero{
+	padding: 200px 0px;
+	background-image: url(../img/header_bgimage.jpg);
+	background-size: cover;
+	background-position: center-left;
+	
+}
+.hero h1{
+	color: white;
+	text-align: center;
+	font-weight: 800;
+    font-size: 50px
+
+}
+.hero h4{
+	color: white;
+	text-align: center;
+	font-weight: 700;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+.btn-button{
+	display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background: #fea501;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: 0.3s ease-in-out;
+}
+.btn-button:hover{
+	background: white;
+	color: #333333;
+}
+
+
+/*==========================
+		PROGRAM SECTION
+============================*/
+.program{
+	color: white;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.program h2{
+	font-size: 25px;
+	text-align: center;
+	color:#333333;
+	font-weight: 800;
+   letter-spacing: 1px;
+   padding-bottom: 40px;
+}
+
+.program .content{
+	background: #f6f6f6;
+	margin: 0px;
+	padding-bottom: 20px;
+	border: 1px solid #ccc;
+}
+.program .content:hover{
+	border: 1px solid #fea501;
+}
+
+/*==============================
+	 2nd progress bar start
+ =============================== */
+
+.program .rate{
+	height: 4px;
+	width: 100%;
+	background: #cccccc;
+	margin-bottom: 20px;
+
+}
+#sent-food {
+    /* You can modify the total time used for the animation here */
+    animation: load 3s normal forwards;
+    /* 
+    Add a little spice by having a shadow below the bar.
+    Feel free to comment out this line below to have an even LITE version :D 
+    */
+    border-radius: 100px;
+    background: #fea501;
+    height: 3px;
+    width:0;
+} 
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 100%;
+    }
+}
+
+
+/*==============================
+	 3rd progress bar start
+ =============================== */
+
+#clean-save {
+    /* You can modify the total time used for the animation here */
+    animation: load 3s normal forwards;
+    /* 
+    Add a little spice by having a shadow below the bar.
+    Feel free to comment out this line below to have an even LITE version :D 
+    */
+    border-radius: 100px;
+    background: #fea501;
+    height: 3px;
+    width: 0;
+} 
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 70%;
+    }
+}
+.program .text{
+	padding: 20px;
+}
+.program h4{
+	font-size: 18px;
+	font-weight: 600;
+	color: #333333;
+	letter-spacing: 1px;
+}
+.program p{
+	color: #666666;
+	font-size: 15px;
+	
+}
+.program .goal{
+	float: right;
+	font-weight: 600;
+
+
+}
+.program h6{
+	color: black;
+	font-size: 17px ;
+	font-weight: 600;
+}
+.program .parcentice{
+	text-align:right; 
+	color:#fea501 ;
+	font-weight: 700;
+}
+
+.program .c-1 img:focus{
+	transform: scale(1.5);
+}
+
+/*==========================
+		ABOUT-US SECTION
+============================*/
+.about-us{
+	background: linear-gradient(#f6f6f6,#ffffff);
+	padding: 100px 0;
+
+}
+.about-us h2{
+	text-align: center;
+	padding-bottom: 30px; 
+	font-weight: 600;
+}
+.about-us h4 a{
+	color: black;
+	font-size: 17px;
+	font-weight: 600;
+	padding-top: 20px;
+
+}
+.about-us h4{
+	padding-top: 20px;
+}
+.about-us p{
+	color:#666666;
+}
+.up img{
+	width: 250px;
+}
+.up .item-1 .about-social{
+	display: inline;
+	
+}
+.up ul li a i{
+	font-size:20px;
+	width: 30px;
+	height: 30px;
+	background-color:skyblue;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+.up ul{
+	padding: 0;
+	display: block;
+}
+.up .item-1 li{
+	float: left;
+}
+.up h5{
+	font-weight:700;
+}
+.up h6{
+	font-weight: 600;
+	color:#fabe09;
+}
+.up .item-1 .contant{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+	
+/*==========================
+		CONTRIBUTE SECTION
+============================*/
+.contribute{
+	background: url(../img/cta_bgimage.jpg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 30px;
+}
+.contribute h5{
+	color: white;
+   text-align: center;
+}
+.contribute h2{
+	color: white;
+   text-align: center;
+   font-size: 27px;
+   font-weight: 700;
+   padding: 15px 0px;
+}
+.contribute p{
+	color: white;
+   text-align: center;
+   padding-bottom: 10px;
+}
+.contribute h3{
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+    font-weight: 700;
+}
+.contribute img{
+	width: 70px;
+	height: 70px;
+	display: block;
+   margin: 0 auto;
+}
+
+/*==========================
+		FEATURE SECTION
+============================*/
+.features{
+	padding: 100px 0px;
+
+}
+.features h2{
+	text-align: center;
+	font-weight: 800;
+}
+.features h4{
+	font-size: 20px;
+   font-weight: 800;
+   text-align: center;
+}
+.features a{
+   color: #333333;
+	
+}
+.underline{
+	width: 25%;
+    height: 1px;
+    background: #cccccc;
+    display: block;
+    margin: 0 auto;
+    transition: 0.6s ease-in-out;
+}
+.features img{
+	width: 70px;
+	display: block;
+	margin: 0 auto;	
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+
+
+.features p{ 
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    padding-top: 10px;
+    line-height: 27px;
+ }
+ .types{
+	box-shadow: 1px 1px 9px 1px #e5e5e5;
+	padding: 20px 30px;
+    margin: 0px;
+    border: 1px solid #f7f7f7;
+}
+.types:hover{
+	border: 1px solid #fea501;
+}
+.types:hover .underline{
+	width: 55%;
+	background:#fea501;
+}
+/*==========================
+		VOLUNTEER SECTION
+============================*/
+.volunteer{
+	padding: 100px 0px;
+	background: #f6f6f6;
+}
+.volunteer h2{
+	text-align: center;
+}
+.volunteer .join-now{
+	background: #fea501;
+	padding: 50px 20px;
+}
+.volunteer img{
+	width: 70%;
+	display: block;
+	margin:0 auto;
+	padding-bottom: 20px;
+}
+.volunteer h4{
+	font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+.volunteer h3{
+	font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+
+}
+.volunteer p{
+	font-size: 14px;
+   font-weight: 400;
+   line-height: 24px;
+   text-align: center;
+   color: white;
+}
+.volunteer button{
+	background: white;
+	color: #fea501;
+}
+.volunteer button:hover{
+	background: #333333;
+	color: #FFFFFF;
+}
+.owl-carousel img{
+	height: 320px;
+} 
+.item{
+	background: white;
+	padding-bottom: 20px;
+	box-shadow: 1px 0px 8px 2px #cccccc;
+}
+.item h3{
+	text-align: center;
+	color: #333333;
+	letter-spacing: 1px;
+}
+.item p{
+	color: black;
+	text-align: center;
+	font-weight: 600;
+	color:  #fea501;
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: #fea501;
+	
+}
+.item .fa{
+	width: 30px;
+	height: 30px;
+	color: white;
+	background: black;
+	border-radius: 50%;
+	line-height: 25px;
+    padding-left: 7px;
+    padding: top;
+    padding-top: 2px;
+}
+.item li{
+	display: inline;
+}
+/*==========================
+		GELLARY SECTION
+============================*/
+.gellary{
+	padding: 100px 0px;
+}
+.gellary h3{
+	text-align: center;
+	padding-bottom: 30px;
+	color: #333333;
+	font-weight: 600;
+}
+.images{
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.shadwo::before{
+	content:"";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	transition: 0.6s ease-in-out;
+
+
+}
+.gellary img{
+	transition: 0.3s ease-in-out;
+}
+
+.shadwo:hover img{
+	transform:scale(1.3) rotate(-10deg) ;
+}
+
+.shadwo:hover::before{
+	top: 0px;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: +1;
+}
+
+/*==========================
+	MAIL-SUBCRIBTION SECTION
+============================*/
+
+.mail-subcribtion{
+	background: url(../img/subscription_bgimage.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0px;
+}
+.mail-subcribtion h2{
+	text-align: center;
+	color: white;
+	font-weight: 700;
+
+}
+.mail-subcribtion input{
+	display: block;
+   margin: 30px auto;
+   background: transparent;
+   border: 1px solid #fff;
+   padding: 5px 15px;
+   width: 400px;
+}
+
+/*==========================
+	  TESTIMONIAL SECTION
+============================*/
+
+.testimonila{
+	background: white;
+	margin: 200px 0px;
+}
+.testimonial h2{
+	text-align: center;
+	margin-top: 60px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.testimonial.owl-item{
+	box-shadow: none;
+	padding: 10px 0px;
+	z-index: -1;	
+}
+.testimonial .slider-card img{
+	border-radius: 10px;
+}
+
+.slider-card{
+	background: #fff;
+	margin: 50px 15px 90px 15px;
+	border-radius: 5px;
+	box-shadow: 0 15px 45px -20px #ccc;
+	transform: scale(0.9);
+	opacity: 0.5;
+	transition: all 0.3s;
+
+}
+
+.testimonial .owl-item.active.center .slider-card{
+	transform: scale(1.15);
+	opacity: 1;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+	font-size: 30px;
+    background: yellow;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    width: 30px;
+}
+.owl-carousel .owl-nav button.owl-next{
+	font-size: 30px;
+    background: yellow;
+    padding: 0px 15px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: 30px;
+}
+.testimonial .t-contant{
+	display: none;
+}
+.testimonial .t-contant p{
+	text-align:center;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+	margin-top: -20px;
+
+}
+
+
+.testimonial .t-contant h4{
+	text-align: center;	
+	color: #333333;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+
+.testimonial .t-contant h5{
+	text-align: center;
+	color: #fea501;
+	font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+
+
+/*==========================
+ UPCOMEING-EVENT SECTION
+============================*/
+
+.upcoming-event{
+	padding: 100px 0px;
+	background: #f7f7f7;
+}
+.upcoming-event h2{
+	text-align: center;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.upcoming-event h4 a{
+	 font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+
+}
+.upcoming-event img{
+ padding-bottom: 20px;
+}
+.event-slider img{
+	width: 40%;
+	float: left;
+   margin-right: 20px;
+}
+.slider ul li{
+	float: left;
+    margin-right: 10px;
+}
+.slider i.fa{
+	color: #666666;
+	padding-right: 5px;
+}
+.slider p{
+	font-size: 15px;
+	color: #666666;
+}
+.fa-calendar:before {
+    content: "\f073";
+    padding-right: 6px;
+	color: #fea501;
+}
+.fa-clock-o:before {
+    content: "\f017";
+    color: #fea501;
+    padding-right: 5px;
+}
+
+/*==========================
+	  UPCOMEING-EVENT SECTION
+============================*/
+.shoping{
+	padding: 70px 0px;
+	color: white;
+}
+.shoping h3{
+text-align: center;
+color: #333333;
+font-size: 25px;
+font-weight: 600;
+padding: 20px 0px;
+}
+.shoping img{
+margin-bottom: 20px;
+}
+
+.shoping .btn-button:hover{
+	background: #333333;
+	color: white;
+} 
+
+/*==========================
+	  PETNER SECTION
+============================*/
+
+.patner{
+	width: 100%;
+	margin: 50px 0px;
+	padding: 50px 0px;
+	background: #f6f6f6;
+}
+.patner #patnerslider img{
+	width: 250px;
+	height: 50px;
+}
+.patner #patnerslider .item{
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+.patner #patnerslider{
+	text-align: center;
+}
+
+
+.patner h3{
+	font-family: Roboto Condensed;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 50px;
+
+}
+
+/*==========================
+	 FOOTER SECTION 
+============================*/
+
+footer{
+	width: 100%;
+	margin-bottom: 0px;
+	background: #222222;
+	padding: 70px 0px;
+}
+
+footer .part-1 img{
+	width:70%;
+	margin: 20px auto;
+	justify-content: flex-start;
+}
+
+footer .part-1 p{
+	color:#f3f3f3;;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	transition: 0.3s ease-in-out;
+}
+footer .part-1 p:hover{
+	color: #dea501;
+}
+footer h5{
+	color: #fff;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+footer .card{
+	background-color: transparent;
+	padding: 5px;
+	border: none;
+	display: flex;
+}
+footer .part-2 img{
+	width:100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+	
+	
+}
+
+footer .part-2 p{
+	color:#f3f3f3;;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	word-break: break-all;
+	transition: 0.3s ease-in-out;		
+}
+footer .part-2{
+	height: 100px;
+}
+footer .part-2 p:hover{
+	color:#dea501 ;
+}
+
+footer .part-3 li a{
+	color: #fff;
+	transition: 0.3s ease-in-out;
+}
+
+footer .part-3 ul{
+	padding: 0;
+}
+
+footer .part-3 li{
+	line-height: 50px;
+	border-bottom: 1px solid #333333;
+}
+footer .part-3 li a:hover{
+color:#dea501 ;
+}
+footer .part-3 li i{
+	margin-right: 10px;
+
+}
+footer .part-4 ul{
+	padding:0;
+}
+footer .part-4 li{
+	color: #fff;
+	font-size: 14px;
+	display: flex;
+	
+}
+footer .part-4 li .fa{
+font-size: 30px;
+color: #fff;
+margin-right: 15px;
+line-height: 50px;
+
+}
+
+footer .part-4 a{
+	color: #fff;
+	line-height:50px;
+	transition: 0.3s ease-in-out;
+}
+footer .part-4 a:hover{
+	color: #dea501;
+}
+footer .social ul li{
+display: inline;
+}
+footer .social ul li .fa{
+width: 35px;
+height: 35px;
+font-size: 20px;
+border: 1px solid #fff;
+line-height: 35px;
+text-align: center;
+transition: 0.3s ease-in-out;
+}
+footer .social ul li .fa:hover{
+	border: 1px solid #dea501;
+	color: #dea501;
+}

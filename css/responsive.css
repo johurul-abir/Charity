@@ -1,0 +1,107 @@
+/*Media Query*/
+
+/*NoteBook Device*/
+@media (min-width: 768px) and (max-width: 990px){
+label.logo{font-size: 25px;}
+ul li a{font-size: 15px;}
+.checkbtn{font-size: 20px;margin-left: 100px;}
+.search{padding-top: 6px;}
+.form-control{height: 29px;font-size: 13px;text-align: center;padding-top: 8px;padding-left: 23px;}
+nav ul li{display: inline;line-height: 49px;margin-left: 10px;}
+ nav ul {padding-right: 40px;}
+   
+}
+
+@media  (max-width: 768px){
+.checkbtn{display: block;}
+.logo {font-size: 25px;padding: 0px;}
+nav ul{background:#FEA501;width: 100%;position: fixed;top: 50px;left: -100%;text-align: center;transition: .5s;}
+nav ul li{display: block;}
+a:hover,a.active{background: none;color: #eb2f06;}
+.active:hover{background:none;}
+#check:checked~ul{left: 0px}
+.checkbtn {margin-left: 35%;}
+.search{padding-top: 6px;}
+.form-control{height: 29px;font-size: 13px;text-align: center;padding-top: 8px;padding-left: 23px;}
+
+}
+
+
+
+
+/*Tablet Device*/
+@media (min-width: 575px) and (max-width: 768px){
+
+}
+
+
+
+/*Mobile Device*/
+@media (min-width: 320px) and (max-width: 575px){
+.hero {padding: 100px 0px;}
+.hero h1 {font-weight: 700;font-size: 30px;}
+.hero h4 {font-weight: 600;font-size: 18px;}
+.program { padding-top: 50px;}
+.about-us {padding: 50px 0px; text-align: center;}
+.up ul li ul{ display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.up .item-1 .contant{
+    float: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+.contribute h2 {
+    font-size: 20px;
+}
+.btn-button {
+   margin-bottom: 30px;
+} 
+.contribute .achivment{
+    padding: 20px;
+}
+.features {
+    padding: 50px 0px;
+}
+.volunteer {
+    padding: 50px 0px;
+}
+.gellary {
+    padding: 50px 0px;
+}
+.upcoming-event {
+    padding: 50px 0px;
+}
+.m-1 {
+    margin: 0 !important;
+}
+.shoping {
+    padding: 50px 0px;
+}
+
+footer{
+    text-align: center;
+}
+footer .part-1 img {
+    width: 70%;
+}
+footer h5 {
+    padding-bottom:0px;
+    padding: 30px 0px;
+
+}
+.mail-subcribtion input {
+        width:auto;
+    }
+footer .part-4 li .fa {
+        font-size: 20px;
+    }
+    footer .part-4 li {
+    justify-content: center;
+       
+    }
+	
+}
